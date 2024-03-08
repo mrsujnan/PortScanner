@@ -48,10 +48,6 @@ def scanport(target, port_range, portdict, threads=10, timeout=1):
         threading.Thread(target=port_scan, args=(target, port, portdict, timeout)).start()
 
 
-
-
-
-
 if __name__ == "__main__":
     targets = input("Enter the target IP addresses or hostnames (separated by ','): ").split(',')
     ports_input = input("Enter the ports to scan (separated by ',' or range by '-'): ")
